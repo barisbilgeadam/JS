@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const liste1=['Ankara','İstanbul','İzmir','Muğla']
+        for (let index = 0; index < liste1.length; index++) {
+            console.log(liste1[index])
+        }
+
+        const aylar=new Array('Ocak','Şubat','Mart')
+        aylar.push('Nisan') //dizi sonuna eleman ekleyebilirsiniz. X POP
+        aylar.unshift('Aralık') //dizi başına eleman ekler. X SHIFT
+        for (let index = 0; index < aylar.length; index++) {
+            console.log(aylar[index])
+        }
+        aylar.reverse();
+        console.log(aylar)
+    </script>
+    
+</body>
+</html>

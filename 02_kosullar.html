@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Araçlar</h2>
+    <ol>
+        <li>BMW</li>
+        <li>Opel</li>
+        <li>Mercedes</li>
+    </ol>
+
+    <script>
+        let arac=prompt('Araç giriniz')
+       /*  if(arac==='BMW')
+          console.log('BMW seçildi')
+        else if(arac==='Mercedes')
+        console.log('Mercedes seçildi')
+        else if(arac==='Opel')
+        console.log('Opel seçildi')
+        else{
+            console.log('Geçersiz seçim')
+        } */
+
+        switch(arac){
+            case 'BMW':  
+            console.log('BMW seçildi'); 
+            break;
+
+            case 'Mercedes':
+            console.log('Mercedes seçildi');
+            break;
+
+            default:
+                alert('Geçersiz Seçim');
+                break;
+
+        }
+        
+        
+    </script>
+</body>
+</html>

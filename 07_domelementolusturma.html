@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+      <ul></ul>
+    </div>
+
+    <script>
+        const menuBasliklar=['Müşteri İşlemler',
+        'Personel İşlemler',
+        'Şikayetler',
+        'Raporlar'
+        ]
+
+        const rootElement=document.getElementById('root')
+
+        const ulElement=document.createElement('ul') // <ul></ul>
+        rootElement.appendChild(ulElement) //<div id="root">    <ul></ul>    </div>
+
+        for (let index = 0; index < menuBasliklar.length; index++) {
+            const liElement=document.createElement('li') // <li></li>
+            liElement.innerHTML=menuBasliklar[index] //<li>Müşteri İşlemler </li>
+
+            if(index%2==0)
+                liElement.style.backgroundColor='red'
+            else
+                liElement.style.backgroundColor='pink'
+
+            ulElement.appendChild(liElement) // <div id="root">    <ul><li>Müşteri İşlemler </li><li>Personel İşlemler </li></ul>    </div>
+            
+        }
+
+    </script>
+   
+</body>
+</html>

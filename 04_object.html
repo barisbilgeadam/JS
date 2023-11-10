@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //musteri objesi oluşturma: Burada değerler KEY:VALUE
+        let musteri = {
+            id: 1,
+            ad: 'Nehir',
+            soyad: 'Yıldız',
+            adres: 'İstanbul'
+        }
+        console.log(musteri)
+
+        //musteri objelerini tutan bir dizi oluşturma:
+        let musteriListesi = [
+            {
+                id: 2,
+                ad: 'Ahmet'
+            },
+            {
+                id:3,
+                ad:'Ada'
+            },
+            {
+                id:4,
+                ad:'Serkan'
+            }
+        ]
+        console.log(musteriListesi)
+
+        let ozelObject={
+            sonuc: true,
+            durum: 'başarılı',
+            sayfaBilgisi:{
+                gecerliSayfa:1,
+                toplamSayfa:10,
+                sonrakiSayfa: true
+            },
+            musteriListesi : [
+            {
+                id: 2,
+                ad: 'Ahmet'
+            },
+            {
+                id:3,
+                ad:'Ada',
+                soyad:'YOK'
+            },
+            {
+                id:4,
+                ad:'Serkan'
+            }
+        ]
+        }
+        console.log(ozelObject)
+        console.log('Geçerli Sayfa:',ozelObject.sayfaBilgisi.gecerliSayfa)
+
+        console.log(ozelObject.musteriListesi[1].soyad)
+    </script>
+</body>
+
+</html>
